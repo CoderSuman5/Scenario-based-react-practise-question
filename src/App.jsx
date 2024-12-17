@@ -41,12 +41,16 @@
 import React from 'react'
 import Counter from './components/Counter'
 import FetchData from './components/FetchData'
+import ConditionalRendering from './components/ConditionalRendering'
+import FormHandling from './components/FormHandling'
 
 const App = () => {
   return (
-    <div>App
-      <Counter/>
-      <FetchData/>
+    <div>
+      {/* <Counter/> */}
+      {/* <FetchData/> */}
+      {/* <ConditionalRendering/> */}
+      <FormHandling/>
     </div>
   )
 }
