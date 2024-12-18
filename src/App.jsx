@@ -43,14 +43,43 @@ import Counter from './components/Counter'
 import FetchData from './components/FetchData'
 import ConditionalRendering from './components/ConditionalRendering'
 import FormHandling from './components/FormHandling'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+// import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 const App = () => {
   return (
     <div>
-      {/* <Counter/> */}
-      {/* <FetchData/> */}
-      {/* <ConditionalRendering/> */}
-      <FormHandling/>
+    
+    <Router>
+      <nav>
+        <button>
+        <Link to='/counter'>counter</Link>
+        </button>
+
+        <button>
+        <Link to='/fetch'>fetch</Link>
+        </button>
+      </nav>
+
+
+     
+        <Routes>
+          <Route path='/counter' element={<Counter/>}/>
+          <Route path='/fetch' element={<FetchData/>}/>
+        </Routes>
+
+      </Router>
+
+        {/* <Counter/>
+        <FetchData/>
+        <ConditionalRendering/>
+        <FormHandling/>
+        <Home/>
+        <Home2/> */}
+
+      
+
     </div>
   )
 }
