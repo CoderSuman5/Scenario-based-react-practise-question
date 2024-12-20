@@ -44,14 +44,20 @@ import FetchData from './components/FetchData'
 import ConditionalRendering from './components/ConditionalRendering'
 import FormHandling from './components/FormHandling'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import Parent from './components/liftingStateUp/Parent'
+import LoginForm from './components/loginFormSingleState/LoginForm'
 // import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// import { ThemeProvider } from './components/themeContext/ThemeContext'
+// import ThemeToggleBtn from './components/themeContext/ThemeToggleBtn'
+// import ThemedComp from './components/themeContext/ThemedComp'
+
 
 
 const App = () => {
   return (
     <div>
     
-    <Router>
+    {/* <Router>
       <nav>
         <button>
         <Link to='/counter'>counter</Link>
@@ -60,6 +66,7 @@ const App = () => {
         <button>
         <Link to='/fetch'>fetch</Link>
         </button>
+
       </nav>
 
 
@@ -69,7 +76,7 @@ const App = () => {
           <Route path='/fetch' element={<FetchData/>}/>
         </Routes>
 
-      </Router>
+      </Router> */}
 
         {/* <Counter/>
         <FetchData/>
@@ -77,7 +84,17 @@ const App = () => {
         <FormHandling/>
         <Home/>
         <Home2/> */}
+        {/* <Parent/> */}
+        <LoginForm/>
 
+
+          {/* <ThemeProvider>
+        <div>
+          <h2 style={{textAlign: 'center'}}>Example of context API with theme</h2>
+          <ThemeToggleBtn/>
+          <ThemedComp/>
+        </div>
+      </ThemeProvider> */}
       
 
     </div>
