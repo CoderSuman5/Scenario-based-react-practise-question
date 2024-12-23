@@ -46,6 +46,7 @@ import FormHandling from './components/FormHandling'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Parent from './components/liftingStateUp/Parent'
 import LoginForm from './components/loginFormSingleState/LoginForm'
+import CustomHook from './components/customHook/CustomHook'
 // import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 // import { ThemeProvider } from './components/themeContext/ThemeContext'
 // import ThemeToggleBtn from './components/themeContext/ThemeToggleBtn'
@@ -85,7 +86,8 @@ const App = () => {
         <Home/>
         <Home2/> */}
         {/* <Parent/> */}
-        <LoginForm/>
+        {/* <LoginForm/> */}
+        <CustomHook/>
 
 
           {/* <ThemeProvider>
@@ -96,6 +98,7 @@ const App = () => {
         </div>
       </ThemeProvider> */}
       
+    
 
     </div>
   )
