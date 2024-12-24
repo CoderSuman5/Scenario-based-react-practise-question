@@ -47,6 +47,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Parent from './components/liftingStateUp/Parent'
 import LoginForm from './components/loginFormSingleState/LoginForm'
 import CustomHook from './components/customHook/CustomHook'
+import ErrorBoundery from './components/errorBoundry/ErrorBoundery'
+import MyComp from './components/errorBoundry/MyComp'
+import MyCompWithout from './components/errorBoundry/MyCompWithout'
 // import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 // import { ThemeProvider } from './components/themeContext/ThemeContext'
 // import ThemeToggleBtn from './components/themeContext/ThemeToggleBtn'
@@ -88,6 +91,11 @@ const App = () => {
         {/* <Parent/> */}
         {/* <LoginForm/> */}
         <CustomHook/>
+
+        <ErrorBoundery>
+          {/* <MyComp/> */}
+          <MyCompWithout/>
+        </ErrorBoundery>
 
 
           {/* <ThemeProvider>
